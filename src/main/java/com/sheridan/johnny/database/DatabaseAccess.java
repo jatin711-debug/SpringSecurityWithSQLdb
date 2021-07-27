@@ -1,9 +1,10 @@
-package com.sheridan.database;
+package com.sheridan.johnny.database;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import com.sheridan.beans.User;
+import com.sheridan.johnny.beans.User;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;

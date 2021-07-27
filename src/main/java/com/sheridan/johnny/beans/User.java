@@ -1,4 +1,4 @@
-package com.sheridan.beans;
+package com.sheridan.johnny.beans;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

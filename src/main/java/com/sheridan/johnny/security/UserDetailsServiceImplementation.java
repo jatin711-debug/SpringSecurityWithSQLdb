@@ -1,9 +1,9 @@
-package com.sheridan.security;
+package com.sheridan.johnny.security;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.sheridan.database.DatabaseAccess;
+import com.sheridan.johnny.database.DatabaseAccess;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
@@ -21,7 +21,7 @@ public class UserDetailsServiceImplementation implements UserDetailsService{
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        com.sheridan.beans.User user = da.findUserAccount(username);
+        com.sheridan.johnny.beans.User user = da.findUserAccount(username);
         if (user == null) {
         System.out.println("User not found:" + username);
         throw new UsernameNotFoundException("User " + username + " was not found in the database");

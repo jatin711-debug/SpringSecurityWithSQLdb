@@ -1,27 +1,27 @@
-package com.sheridan.Controller;
+package com.sheridan.johnny.Controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class navigationController {
 
-    @GetMapping("/")
-    public String index() {
+    @RequestMapping("/")
+    public String home() {
     return "index";
     }
 
-    @GetMapping("/secure")
+    @RequestMapping("/secure")
     public String secureIndex() {
     return "/secure/index";
     }
 
-    @GetMapping("/login")
+    @RequestMapping("/login")
     public String login() {
-    return "login";
+        return "login";
     }
 
-    @GetMapping("/permission-denied")
+    @RequestMapping("/permission-denied")
     public String permissionDenied() {
     return "/error/permission-denied";
     }

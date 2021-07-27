@@ -1,4 +1,4 @@
-package com.sheridan.security;
+package com.sheridan.johnny.security;
 
 import java.io.IOException;
 
